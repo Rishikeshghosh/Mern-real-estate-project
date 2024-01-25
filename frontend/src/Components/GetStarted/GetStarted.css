@@ -1,0 +1,44 @@
+.g-container {
+  width: 100vw;
+}
+.g-detail {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border: 6px solid #5d77d6;
+  margin: 0 2rem;
+  border-radius: 0.5rem;
+  background: #4161df;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.8rem;
+
+  padding: 1.9rem;
+}
+.g-detail .secondaryText {
+  text-align: center;
+
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.587);
+}
+.primary {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.g-wrapper {
+  margin: 2.5rem 0;
+}
+.g-detail .button {
+  background: #5a73d7;
+  border: 2px solid white;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .primary {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,22 @@
+.main-fav-wraper {
+  width: 100%;
+}
+.main-fav-container {
+  width: 100%;
+  padding-top: 5rem;
+}
+.main-fav-container .main-fav-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-fav-container .main-title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+.owned-empty {
+  margin-top: 1rem;
+}

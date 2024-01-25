@@ -1,0 +1,105 @@
+.r-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+.r-wrapper {
+  margin: 0 2rem;
+  margin-bottom: -0.5rem;
+}
+
+.swipper-horizontal {
+  overflow: visible;
+}
+.r-container {
+  position: relative;
+  overflow: hidden;
+}
+.r-buttons button {
+  font-size: 1.2rem;
+  padding: 0.2rem 0.8rem;
+  color: blue;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+.r-buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  right: 7%;
+  top: 26%;
+  z-index: 3;
+  position: absolute;
+}
+.r-buttons > :nth-child(1) {
+  background-color: #eeeeff;
+}
+.r-buttons > :nth-child(2) {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1000px) {
+  .blur {
+    animation-name: setBlur;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+  }
+}
+@media (max-width: 576px) {
+  .r-card {
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    row-gap: 0.6rem;
+    border-radius: 10px;
+    transition: all 300ms ease-in;
+  }
+  .r-card > img {
+    width: 100%;
+  }
+}
+@keyframes setBlur {
+  0% {
+    filter: blur(2px);
+  }
+  10% {
+    filter: blur(4px);
+  }
+  20% {
+    filter: blur(6px);
+  }
+  30% {
+    filter: blur(8px);
+  }
+  40% {
+    filter: blur(10px);
+  }
+  50% {
+    filter: blur(12px);
+  }
+  60% {
+    filter: blur(14px);
+  }
+  70% {
+    filter: blur(16px);
+  }
+  80% {
+    filter: blur(18px);
+  }
+  90% {
+    filter: blur(19px);
+  }
+  100% {
+    filter: blur(20px);
+  }
+}

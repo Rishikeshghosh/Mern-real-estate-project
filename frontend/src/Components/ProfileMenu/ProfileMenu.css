@@ -1,0 +1,101 @@
+.menuprofile-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.menuprofile-section {
+  width: 350px;
+  padding: 1.5rem 1rem;
+  row-gap: 0.5rem;
+  top: 12vh;
+  right: -100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  color: black;
+  transition: all 0.5s ease-out;
+  border-radius: 20px;
+}
+.dropdown-user {
+  position: absolute;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  width: 355px;
+  height: 520px;
+  padding: 1.5rem 1rem;
+  row-gap: 0.5rem;
+  top: 12vh;
+  right: 5.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-out;
+  border-radius: 10px;
+}
+
+.menuprofile-detail > h2 {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #1f3e72;
+  margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+.menuprofile-info {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  background-color: #e2dfd2;
+  padding: 0.8rem;
+  column-gap: 1.7rem;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.5s ease-out;
+  font-weight: 300;
+  max-height: 3.3rem;
+  min-height: 3.3rem;
+}
+
+.menuprofile-info .user-r-icon {
+  position: absolute;
+  right: 1rem;
+  transition: 0.5s linear;
+}
+.menuprofile-info:hover .user-r-icon {
+  transform: translateX(50vw);
+}
+.menuprofile-wrapper .menuprofile-info:hover {
+  scale: 0.9;
+  background: var(--blue-gradient);
+  color: white;
+}
+
+.user-close-icon > svg {
+  font-size: 2rem;
+}
+
+.dropdown-user .main {
+  margin-top: -0.4rem;
+
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  justify-content: start;
+  align-items: center;
+  column-gap: 1rem;
+  padding-bottom: 2.5rem;
+}
+.menuprofile-detail > img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+
+  border: 4px solid whitesmoke;
+}

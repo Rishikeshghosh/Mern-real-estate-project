@@ -1,0 +1,104 @@
+.empty-cart-wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empty-cart-container {
+  width: 550px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+}
+.empty-cart-container .img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+.empty-cart-container .img > img {
+  width: 100%;
+  height: 12rem;
+}
+.empty-cart-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+.empty-cart-info > h2 {
+  font-size: 1.8rem;
+}
+.empty-cart-info > span {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.empty-cart-info > button {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.8rem;
+  background: var(--blue-gradient);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  margin-top: 2rem;
+  transition: all 0.4s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.7rem;
+}
+svg {
+  transition: all 0.4s ease-out;
+}
+.empty-cart-info > button:hover > svg {
+  transform: translateX(10px);
+}
+.empty-cart-info > button:hover {
+  scale: 0.9;
+}
+.empty-cart-info .red {
+  color: red;
+}
+@media (max-width: 600px) {
+  .empty-cart-container {
+    width: 400px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    padding: 1.5rem;
+  }
+  .empty-cart-info > span {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 400px) {
+  .empty-cart-container {
+    width: 100vw;
+    box-shadow: initial;
+    padding: 1rem;
+  }
+  .empty-cart-info > h2 {
+    font-size: 1.5rem;
+  }
+  .empty-cart-info > button {
+    width: 65%;
+    margin: 0 auto;
+    padding: 0.8rem;
+    background: var(--blue-gradient);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    margin-top: 2rem;
+    transition: all 0.4s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.7rem;
+  }
+  .empty-cart-info > span {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+}

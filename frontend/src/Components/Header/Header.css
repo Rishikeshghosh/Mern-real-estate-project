@@ -1,0 +1,323 @@
+.h-wrapper {
+  padding: 0 2rem;
+  background: var(--black); /*  rgb(48, 46, 46) */
+  color: white;
+
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+}
+.cngClr {
+  background: rgb(48, 46, 46);
+}
+.h-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 0;
+  padding-bottom: 0.5rem;
+
+  color: var(--secondary);
+}
+.user-pic > img {
+  width: 40px;
+  border-radius: 20px;
+  border: 2px solid whitesmoke;
+}
+
+.h-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+.h-menu > a {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.h-menu > * {
+  cursor: pointer;
+}
+.menu-icon {
+  display: none;
+}
+.h-menu-sm-display {
+  display: none;
+}
+.h-menu-sm-none {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .blur {
+    animation-name: setBlur;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+  }
+  .h-menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    width: max-content;
+    height: max-content;
+  }
+
+  .h-wrapper {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+  }
+  .h-menu-sm-none {
+    border-radius: 1.5rem;
+    z-index: 6;
+    top: -100%;
+    right: 5%;
+    position: fixed;
+    width: 90vw;
+    z-index: 7;
+    height: 100%;
+    background: white;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+    transition: all 0.5s ease-out;
+    max-height: 600px;
+  }
+
+  .h-menu-sm-display {
+    border-radius: 1.5rem;
+    z-index: 7;
+    top: 10%;
+    right: 5%;
+    left: 5%;
+    position: fixed;
+    width: 90vw;
+    z-index: 7;
+    height: 100%;
+    background: white;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.8rem;
+    border: 4px solid var(--blue-gradient);
+    transition: all 0.5s ease-out;
+    max-height: 530px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  }
+}
+.main-user-container.menuprofile-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.main-user-container.menuprofile-section {
+  width: 350px;
+  padding: 1.5rem 1rem;
+  row-gap: 0.5rem;
+  top: 12vh;
+  right: -100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  color: black;
+  transition: all 0.5s ease-out;
+  border-radius: 20px;
+}
+.main-user-container.dropdown-user {
+  width: 350px;
+  padding: 1.5rem 1rem;
+  row-gap: 0.5rem;
+  top: 12vh;
+  right: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  color: black;
+  transition: all 0.5s ease-out;
+  border-radius: 20px;
+}
+.main-user-container .user-heading-info > img {
+  border-radius: 50%;
+  display: block;
+
+  position: relative;
+  border: 5px solid whitesmoke;
+}
+
+.main-user-container .user-heading-info > img {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.main-user-container .user-heading-info .user-name {
+  display: block;
+
+  font-size: 1.5rem;
+  margin: auto 0;
+}
+.main-user-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+  margin: auto 0;
+}
+.main-user-container .user-heading-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  column-gap: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.8rem;
+}
+.main-user-container .menuprofile-info {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: min-content max-content min-content;
+
+  /*  background-color: #e2dfd2; */
+  background: white;
+  padding: 0.4rem 0.5rem;
+  column-gap: 1.2rem;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.5s ease-out;
+}
+.main-user-container .menuprofile-info .user-r-icon {
+  font-size: 1.3rem;
+  right: 1rem;
+
+  color: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+
+  transition: 0.5s linear;
+}
+.menuprofile-info:hover .user-r-icon {
+  transform: translateX(50vw);
+}
+.menuprofile-info:hover {
+  scale: 0.9;
+}
+.main-user-container .menuprofile-info .user-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+
+  background-color: #e2dfd2;
+}
+
+.main-user-container .user-close-icon {
+  position: relative;
+
+  left: -7.5rem;
+  font-size: 1.2rem;
+}
+
+.sm-logout-button {
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  background: var(--blue-gradient);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: all 300ms ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.main-user-container {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.logout-user > button {
+  width: 10rem;
+  height: 2.7rem;
+}
+/* .user-pic {
+  width: max-content;
+  border-radius: 90%;
+} */
+@keyframes setBlur {
+  0% {
+    filter: blur(2px);
+  }
+  10% {
+    filter: blur(4px);
+  }
+  20% {
+    filter: blur(6px);
+  }
+  30% {
+    filter: blur(8px);
+  }
+  40% {
+    filter: blur(10px);
+  }
+  50% {
+    filter: blur(12px);
+  }
+  60% {
+    filter: blur(14px);
+  }
+  70% {
+    filter: blur(16px);
+  }
+  80% {
+    filter: blur(18px);
+  }
+  90% {
+    filter: blur(19px);
+  }
+  100% {
+    filter: blur(20px);
+  }
+}
+.drop-d-img {
+  width: max-content;
+}
+.drop-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid whitesmoke;
+}
+.drop-d-sm-img {
+  width: max-content;
+}
+.drop-sm-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid whitesmoke;
+}

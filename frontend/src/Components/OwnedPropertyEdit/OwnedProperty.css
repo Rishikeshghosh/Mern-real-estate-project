@@ -1,0 +1,296 @@
+.create-property-wrapper {
+  width: 100%;
+}
+.create-property-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-property-container .form-box {
+  width: max-content;
+
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.form-box .form {
+  width: 55rem;
+  display: grid;
+  grid-template-columns: 400px max-content 300px;
+  column-gap: 4rem;
+  background-color: rgb(222, 215, 215);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.form-box .form .line {
+  height: 100%;
+  width: 2px;
+  background-color: black;
+}
+.form .box {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+}
+.form .container {
+  width: 100%;
+  margin-top: -0.3rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.box {
+  margin: 0 auto;
+}
+.box > label {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.box > input {
+  width: 22rem;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+.create-property-container .create-res-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-property-container .create-res-btn > button {
+  transition: all 0.4s ease-out;
+}
+.create-property-container .create-res-btn > button {
+  width: 90%;
+  background: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  min-height: 2.5rem;
+  max-height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-property-container .create-res-btn > button:hover {
+  transition: all 0.4s ease-out;
+  scale: 0.9;
+}
+.create-property-container .box-facy > span {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.create-property-container .box-facy {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  row-gap: 1rem;
+}
+.box-facy .facy {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.box-facy .facy > input {
+  width: 16rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+.create-property-container .create-res-btn-fac {
+  display: none;
+}
+.create-res-btn-fac > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 950px) {
+  .form-box .form {
+    width: max-content;
+    display: grid;
+    grid-template-columns: 400px;
+    row-gap: 1.5rem;
+    background-color: rgb(222, 215, 215);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .form-box .form .line {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+  }
+  .create-property-container .create-res-btn {
+    display: none;
+  }
+  .create-property-container .create-res-btn-fac {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .create-property-container .create-res-btn-fac > button {
+    transition: all 0.4s ease-out;
+  }
+  .create-property-container .create-res-btn-fac > button {
+    width: 100%;
+    background: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    min-height: 2.5rem;
+    max-height: 2.5rem;
+  }
+  .create-property-container .box-facy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  .box-facy .facy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 510px) {
+  .box > label {
+    font-size: 1rem;
+    font-weight: 00;
+  }
+  .form-box .form {
+    width: max-content;
+    display: grid;
+    grid-template-columns: 300px;
+    row-gap: 1.5rem;
+    background-color: rgb(222, 215, 215);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .box-facy .facy > input {
+    width: 14rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+  }
+  .box > input {
+    width: 18rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+  .form-box .form .line {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+  }
+  .create-property-container .create-res-btn {
+    display: none;
+  }
+  .create-property-container .create-res-btn-fac {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .create-property-container .create-res-btn-fac > button {
+    transition: all 0.4s ease-out;
+  }
+  .create-property-container .create-res-btn-fac > button {
+    width: 100%;
+    background: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    min-height: 2.5rem;
+    max-height: 2.5rem;
+  }
+  .create-property-container .box-facy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  .box-facy .facy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 390px) {
+  .form-box .form {
+    width: max-content;
+    display: grid;
+    grid-template-columns: 270px;
+    row-gap: 1.5rem;
+    background-color: rgb(222, 215, 215);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .box-facy .facy > input {
+    width: 14rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+  }
+  .box > input {
+    width: 15rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+  .form-box .form .line {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+  }
+  .create-property-container .create-res-btn {
+    display: none;
+  }
+  .create-property-container .create-res-btn-fac {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .create-property-container .create-res-btn-fac > button {
+    transition: all 0.4s ease-out;
+  }
+  .create-property-container .create-res-btn-fac > button {
+    width: 100%;
+    min-height: 2.5rem;
+    max-height: 2.5rem;
+    background: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  .create-property-container .box-facy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  .box-facy .facy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
